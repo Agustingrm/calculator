@@ -132,6 +132,16 @@ window.setInterval(ShowItBottom,10)
 
 function ShowItBottom(){
     document.querySelector('#displayBottom').innerHTML = firstNumber+' '+operator+' '+numberStorage.join('');
+    if ((firstNumber.length + 1 + numberStorage.length) > 12){
+        var changeFontSize = document.getElementById('displayBottom')
+        changeFontSize.style.fontSize = '20px'
+}
+    if ((firstNumber.length + 1 + numberStorage.length) > 18){
+        var changeFontSize = document.getElementById('displayBottom')
+        var changeFontSizeTop = document.getElementById('displayTop')
+        changeFontSizeTop.style.fontSize = '10px'
+        changeFontSize.style.fontSize = '10px'
+}
 }
 
 var firstNumber = '';
@@ -239,6 +249,4 @@ const erase = document.getElementById('erase')
 erase.addEventListener('click',()=> {
     numberStorage.pop()
 });
-
-//Stop giving erros when you double press the operator
 

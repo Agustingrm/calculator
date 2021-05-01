@@ -30,6 +30,7 @@ body {
     box-sizing: border-box;
     text-align: right;
     overflow: hidden;
+    text-overflow: ellipsis;
     white-space: nowrap
 }
 
