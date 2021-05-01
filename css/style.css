@@ -75,6 +75,10 @@ body {
     grid-template-rows: repeat(4, 67.5px);
 }
 
+#division, #multi, #plus, #minus {
+    background-color: orange;
+}
+
 button, #display {
     font-family: 'Orbitron', sans-serif;
     font-size: 25px;
